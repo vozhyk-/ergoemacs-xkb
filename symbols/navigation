@@ -54,6 +54,34 @@ xkb_symbols "navigation" {
 			RedirectKey(key=<END>, clearmods=Alt), RedirectKey(key=<END>, clearmods=Alt)]
 	};
 
+	// delete {forward,backward}
+	KEY <AC03> {
+		type = "NAVIGATION",
+		symbols[Group2] = [ BackSpace, BackSpace ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<BKSP>, clearmods=Alt), RedirectKey(key=<BKSP>, clearmods=Alt)]
+	};
+	KEY <AC04> {
+		type = "NAVIGATION",
+		symbols[Group2] = [ Delete, Delete ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<DELE>, clearmods=Alt), RedirectKey(key=<DELE>, clearmods=Alt)]
+	};
+
+	// delete word {forward,backward}
+	KEY <AD03> {
+		type = "NAVIGATION",
+		symbols[Group2] = [ BackSpace, BackSpace ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<BKSP>, clearmods=Alt, modifiers=Control), RedirectKey(key=<BKSP>, clearmods=Alt, modifiers=Control)]
+	};
+	KEY <AD04> {
+		type = "NAVIGATION",
+		symbols[Group2] = [ Delete, Delete ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<DELE>, clearmods=Alt, modifiers=Control), RedirectKey(key=<DELE>, clearmods=Alt, modifiers=Control)]
+	};
+
 	// enter
 	KEY <AB07> {
 		type = "NAVIGATION",
