@@ -1,0 +1,13 @@
+partial xkb_types "navigation" {
+	type "NAVIGATION" {
+		modifiers = Shift+Alt;
+		map[None] = level1;
+		map[Shift] = level2;
+		map[Alt] = level3;
+		map[Alt+Shift] = level4;
+		level_name[Level1] = "Base";
+		level_name[Level2] = "Shift";
+		level_name[Level3] = "Arrows";
+		level_name[Level4] = "Shift-Arrows";
+	};
+};

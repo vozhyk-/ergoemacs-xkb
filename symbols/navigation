@@ -1,0 +1,64 @@
+default partial default
+xkb_symbols "navigation" {
+	// up, down, left, right
+	KEY <AD08> {
+		type = "NAVIGATION",
+		[ c, C, Up, Up ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<UP>, clearmods=Alt), RedirectKey(key=<UP>, clearmods=Alt)]
+	};
+	KEY <AC08> {
+		type = "NAVIGATION",
+		[ t, T, Down, Down ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<DOWN>, clearmods=Alt), RedirectKey(key=<DOWN>, clearmods=Alt)]
+	};
+	KEY <AC07> {
+		type = "NAVIGATION",
+		[ h, H, Left, Left ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<LEFT>, clearmods=Alt), RedirectKey(key=<LEFT>, clearmods=Alt)]
+	};
+	KEY <AC09> {
+		type = "NAVIGATION",
+		[ n, N, Right, Right ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<RGHT>, clearmods=Alt), RedirectKey(key=<RGHT>, clearmods=Alt)]
+	};
+
+	// word-{left,right}
+	KEY <AD07> {
+		type = "NAVIGATION",
+		[ g, G, XF86Back, XF86Back ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control)]
+	};
+	KEY <AD09> {
+		type = "NAVIGATION",
+		[ r, R, XF86Forward, XF86Forward ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<RGHT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<RGHT>, clearmods=Alt, modifiers=Control)]
+	};
+
+	// home, end
+	KEY <AC06> {
+		type = "NAVIGATION",
+		[ d, D, Home, Home ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<HOME>, clearmods=Alt), RedirectKey(key=<HOME>, clearmods=Alt)]
+	};
+	KEY <AD06> {
+		type = "NAVIGATION",
+		[ f, F, End, End ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<END>, clearmods=Alt), RedirectKey(key=<END>, clearmods=Alt)]
+	};
+
+	// enter
+	KEY <AB07> {
+		type = "NAVIGATION",
+		[ m, M, Return, Return ],
+		actions[Group1] = [NoAction(), NoAction(),
+			RedirectKey(key=<RTRN>, clearmods=Alt), RedirectKey(key=<RTRN>, clearmods=Alt)]
+	};
+};
