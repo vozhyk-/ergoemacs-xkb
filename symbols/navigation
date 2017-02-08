@@ -47,9 +47,9 @@ xkb_symbols "navigation" {
 		actions[Group1] = [NoAction(), NoAction(),
 			RedirectKey(key=<HOME>, clearmods=Alt), RedirectKey(key=<HOME>, clearmods=Alt)]
 	};
-	KEY <AD06> {
+	KEY <AB06> {
 		type = "NAVIGATION",
-		[ f, F, End, End ],
+		[ b, B, End, End ],
 		actions[Group1] = [NoAction(), NoAction(),
 			RedirectKey(key=<END>, clearmods=Alt), RedirectKey(key=<END>, clearmods=Alt)]
 	};
