@@ -1,4 +1,4 @@
-default partial default
+partial default
 xkb_symbols "navigation" {
 	// up, down, left, right
 	KEY <AD08> {
