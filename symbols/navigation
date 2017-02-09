@@ -26,18 +26,18 @@ xkb_symbols "navigation" {
 			RedirectKey(key=<RGHT>, clearmods=Alt), RedirectKey(key=<RGHT>, clearmods=Alt)]
 	};
 
-	// word-{left,right}
+	// {word,paragraph} {forward,backward}
 	KEY <AD07> {
 		type = "NAVIGATION",
 		[ g, G, XF86Back, XF86Back ],
 		actions[Group1] = [NoAction(), NoAction(),
-			RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control)]
+			RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<UP>, clearmods=Alt+Shift, modifiers=Control), RedirectKey(key=<LEFT>, clearmods=Alt, modifiers=Control)]
 	};
 	KEY <AD09> {
 		type = "NAVIGATION",
 		[ r, R, XF86Forward, XF86Forward ],
 		actions[Group1] = [NoAction(), NoAction(),
-			RedirectKey(key=<RGHT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<RGHT>, clearmods=Alt, modifiers=Control)]
+			RedirectKey(key=<RGHT>, clearmods=Alt, modifiers=Control), RedirectKey(key=<DOWN>, clearmods=Alt+Shift, modifiers=Control)]
 	};
 
 	// home, end
